@@ -124,16 +124,34 @@ http://snu.ac.kr/barrier-free/
 
 ## 🎯 사용 예시
 
-### 질문 예시
+### 🔍 수강신청 도우미 (Chat): AI 챗봇으로 장애 학우 맞춤형 정보 제공
+
+#### 질문 예시
 - "500동에 엘리베이터 있어?"
 - "지체 장애 학우가 접근 가능한 강의실은?"
 - "장애인 화장실 위치가 어디야?"
 - "500동에서 중앙도서관까지 휠체어로 갈 수 있는 경로 있어?"
 
-### 예상 답변
+#### 예상 답변
 - 자연스러운 한국어 답변
 - SPARQL 쿼리 및 조회 근거 데이터 제시
 - 시각화된 경로 또는 시설 정보
+
+<img width="850" height="276" alt="image" src="https://github.com/user-attachments/assets/6137f0b6-aa32-44d0-8a1c-02717fa93760" />
+<img width="834" height="486" alt="image" src="https://github.com/user-attachments/assets/5d24b5ce-803c-4362-b027-406858c634c6" />
+
+### 🛠️ 시설 관리 (Maintenance): 캠퍼스 시설 접근성 정보 관리
+
+<img width="837" height="49" alt="image" src="https://github.com/user-attachments/assets/9d7f9374-60cd-42d8-b209-99b04d242e64" />
+<img width="845" height="336" alt="image" src="https://github.com/user-attachments/assets/795e1095-a099-44d1-98a9-b5f691f9d668" />
+<img width="854" height="357" alt="image" src="https://github.com/user-attachments/assets/6a47997d-15c1-44ef-b8bb-5c45ca6d082a" />
+
+
+### 📊 지식 그래프 시각화 (Visualization): RDF 기반 온톨로지 시각화
+
+<img width="845" height="494" alt="image" src="https://github.com/user-attachments/assets/8d7cb542-a8f8-43f6-8b9d-a2b9087c4ab6" />
+
+
 
 ## 📝 문서
 
