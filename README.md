@@ -1,6 +1,7 @@
 # 🎓 Course_Registration_Supporter
 
 **"안전하게 서울대를 재-빠르게: 모두를 위한 서울대 배리어 프리 서비스"**
+<img width="1436" height="805" alt="image" src="https://github.com/user-attachments/assets/1146d350-f788-41d5-9b71-2660bce80755" />
 
 이동 약자 학우를 위한 **지식 그래프 기반 배리어프리 수강신청 도우미**입니다. AI 에이전트를 활용하여 수강신청 관련 정보, 시설 접근성, 네비게이션 정보를 제공합니다.
 
@@ -106,6 +107,11 @@
 - **주체 (Classes)**: 교과목, 건물, 시설, 경로 등
 - **관계 (Properties)**: 소속, 접근성, 위치 정보 등
 - **속성 (Data Properties)**: 엘리베이터 유무, 휠체어 접근 가능 여부 등
+<img width="1018" height="459" alt="image" src="https://github.com/user-attachments/assets/8af7c032-78f8-46ba-9d6a-659d5d3a98c9" />
+<img width="1254" height="522" alt="image" src="https://github.com/user-attachments/assets/230f509f-843f-432d-8dec-1cda5062abad" />
+<img width="1347" height="409" alt="image" src="https://github.com/user-attachments/assets/376dad8f-239f-4bd8-818f-171140af9c53" />
+<img width="1081" height="461" alt="image" src="https://github.com/user-attachments/assets/e09b019a-02e4-4dac-a9c9-0ca3a33a3d85" />
+
 
 ### RDF 네임스페이스
 ```
@@ -131,7 +137,7 @@ http://snu.ac.kr/barrier-free/
 
 - **`competency_questions.md`**: 온톨로지가 답할 수 있는 질문들
 - **`prompt.md`**: AI 에이전트의 시스템 프롬프트
-- **`knowledge_graph.html`**: [지식 그래프 시각화 보기](ontology/docs/knowledge_graph.html)
+- **`knowledge_graph.html`**: [지식 그래프 시각화 보기](https://dmseong.github.io/Course_Registration_Supporter/)
 
 
 
