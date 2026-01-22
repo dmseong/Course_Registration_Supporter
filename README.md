@@ -102,6 +102,7 @@
 ---
 
 ## 📊 지식 그래프 구조
+<img width="778" height="747" alt="image" src="https://github.com/user-attachments/assets/91c0dd62-8096-48d0-903f-d7a839ae4123" />
 
 ### 온톨로지 개요
 - **주체 (Classes)**: 교과목, 건물, 시설, 경로 등
