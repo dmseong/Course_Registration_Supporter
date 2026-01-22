@@ -1,0 +1,771 @@
+@prefix : <http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#> .
+
+<http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#connects_To
+:connects_To rdf:type owl:ObjectProperty ;
+             rdfs:domain :Route ;
+             rdfs:range :Building .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#has_Facility
+:has_Facility rdf:type owl:ObjectProperty ;
+              rdfs:domain :Building ;
+              rdfs:range :Facility .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#has_Hazard
+:has_Hazard rdf:type owl:ObjectProperty ;
+            rdfs:domain :Building , :Route ;
+            rdfs:range :Hazard .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#has_Room
+:has_Room rdf:type owl:ObjectProperty ;
+          rdfs:domain :Building ;
+          rdfs:range :Room .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#is_Held_At
+:is_Held_At rdf:type owl:ObjectProperty ;
+            rdfs:domain :Course ;
+            rdfs:range :Room .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#is_Located_In
+:is_Located_In rdf:type owl:ObjectProperty ;
+               rdfs:domain :Room ;
+               rdfs:range :Building .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#is_endPointOf
+:is_endPointOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :Route ;
+               rdfs:range :Building .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#B_geoLat
+:B_geoLat rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Building ;
+          rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#B_geoLong
+:B_geoLong rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Building ;
+           rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#C_CourseName
+:C_CourseName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Course ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#C_dayOfWeek
+:C_dayOfWeek rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#C_endTime
+:C_endTime rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Course ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#C_professor
+:C_professor rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#C_startTime
+:C_startTime rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#F_korean
+:F_korean rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Facility ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#H_korean
+:H_korean rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Hazard ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/2with/ontologies/2026/0/untitled-ontology-6#Rt_distance
+:Rt_distance rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Route ;
+             rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+:Building rdf:type owl:Class .
+
+:Course rdf:type owl:Class .
+
+:Facility rdf:type owl:Class .
+
+:Hazard rdf:type owl:Class .
+
+:Room rdf:type owl:Class ;
+      rdfs:subClassOf :Building .
+
+:Route rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  Facilities (편의시설)
+:AutoDoor rdf:type owl:NamedIndividual, :Facility ;
+          :F_korean "자동문" .
+
+:Lift rdf:type owl:NamedIndividual, :Facility ;
+      :F_korean "엘리베이터" .
+
+:Ramp rdf:type owl:NamedIndividual, :Facility ;
+      :F_korean "경사로" .
+
+:WC rdf:type owl:NamedIndividual, :Facility ;
+    :F_korean "장애인화장실" .
+
+
+###  Hazards (위험요소)
+:Bollard rdf:type owl:NamedIndividual, :Hazard ;
+         :H_korean "볼라드" .
+
+:Crosswalk rdf:type owl:NamedIndividual, :Hazard ;
+           :H_korean "횡단보도" .
+
+:Curb rdf:type owl:NamedIndividual, :Hazard ;
+      :H_korean "턱" .
+
+:Steep rdf:type owl:NamedIndividual, :Hazard ;
+       :H_korean "급경사" .
+
+
+###  Buildings (건물)
+:24동 rdf:type owl:NamedIndividual, :Building ;
+      :has_Facility :AutoDoor , :Lift , :Ramp ;
+      :B_geoLat "37.45944"^^xsd:float ;
+      :B_geoLong "126.94992"^^xsd:float .
+
+:25동 rdf:type owl:NamedIndividual, :Building ;
+      :has_Room :R_25_105 ;
+      :has_Facility :AutoDoor , :Lift , :Ramp , :WC ;
+      :B_geoLat "37.458706"^^xsd:float ;
+      :B_geoLong "126.94999"^^xsd:float .
+
+:43-1동 rdf:type owl:NamedIndividual, :Building ;
+       :has_Facility :Lift , :Ramp , :WC ;
+       :B_geoLat "37.456635"^^xsd:float ;
+       :B_geoLong "126.95142"^^xsd:float .
+
+:500동 rdf:type owl:NamedIndividual, :Building ;
+       :has_Facility :AutoDoor , :Lift , :Ramp , :WC ;
+       :B_geoLat "37.45917"^^xsd:float ;
+       :B_geoLong "126.948204"^^xsd:float .
+
+:62동 rdf:type owl:NamedIndividual, :Building ;
+      :has_Facility :AutoDoor , :Lift , :Ramp , :WC ;
+      :B_geoLat "37.459244"^^xsd:float ;
+      :B_geoLong "126.95211"^^xsd:float .
+
+
+###  Rooms (강의실)
+:R_25_105 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :25동 .
+
+:R_24_113 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :24동 .
+
+:R_24_207 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :24동 .
+
+:R_24_209 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :24동 .
+
+:R_24_210 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :24동 .
+
+:R_24_211 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :24동 .
+
+:R_25_101 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :25동 .
+
+:R_25_104 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :25동 .
+
+:R_25_109 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :25동 .
+
+:R_25_110 rdf:type owl:NamedIndividual, :Room ;
+          :is_Located_In :25동 .
+
+:R_43-1_303 rdf:type owl:NamedIndividual, :Room ;
+            :is_Located_In :43-1동 .
+
+:R_43-1_403 rdf:type owl:NamedIndividual, :Room ;
+            :is_Located_In :43-1동 .
+
+:R_43-1_405 rdf:type owl:NamedIndividual, :Room ;
+            :is_Located_In :43-1동 .
+
+:R_500_L301 rdf:type owl:NamedIndividual, :Room ;
+             :is_Located_In :500동 .
+
+:R_500_L302 rdf:type owl:NamedIndividual, :Room ;
+             :is_Located_In :500동 .
+
+:R_500_L303 rdf:type owl:NamedIndividual, :Room ;
+             :is_Located_In :500동 .
+
+:R_500_L305 rdf:type owl:NamedIndividual, :Room ;
+             :is_Located_In :500동 .
+
+:R_500_L306 rdf:type owl:NamedIndividual, :Room ;
+             :is_Located_In :500동 .
+
+:R_500_L310 rdf:type owl:NamedIndividual, :Room ;
+             :is_Located_In :500동 .
+
+:R_62_205 rdf:type owl:NamedIndividual, :Room ;
+           :is_Located_In :62동 .
+
+
+###  Courses (강의)
+:10101 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_105 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "09:00" ;
+      :C_endTime "09:50" .
+
+:10102 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_24_209 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "14:00" ;
+      :C_endTime "14:50" .
+
+:10103 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_109 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "11:00" ;
+      :C_endTime "11:50" .
+
+:10104 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "13:00" ;
+      :C_endTime "13:50" .
+
+:10105 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "10:00" ;
+      :C_endTime "10:50" .
+
+:10106 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_109 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "09:00" ;
+      :C_endTime "09:50" .
+
+:10107 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_24_209 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "10:00" ;
+      :C_endTime "10:50" .
+
+:10108 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_24_210 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "10:00" ;
+      :C_endTime "10:50" .
+
+:10109 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "12:00" ;
+      :C_endTime "12:50" .
+
+:10110 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_24_209 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "13:00" ;
+      :C_endTime "13:50" .
+
+:10111 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "15:00" ;
+      :C_endTime "15:50" .
+
+:10112 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_24_207 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "11:00" ;
+      :C_endTime "11:50" .
+
+:10113 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "09:00" ;
+      :C_endTime "09:50" .
+
+:10114 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_500_L305 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "13:00" ;
+      :C_endTime "13:50" .
+
+:10115 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_500_L301 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "14:00" ;
+      :C_endTime "14:50" .
+
+:10116 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_105 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "10:00" ;
+      :C_endTime "10:50" .
+
+:10117 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "09:00" ;
+      :C_endTime "09:50" .
+
+:10118 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "10:00" ;
+      :C_endTime "10:50" .
+
+:10119 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_105 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "13:00" ;
+      :C_endTime "13:50" .
+
+:10120 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_500_L302 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "10:00" ;
+      :C_endTime "10:50" .
+
+:10121 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "14:00" ;
+      :C_endTime "14:50" .
+
+:10122 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_105 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "14:00" ;
+      :C_endTime "14:50" .
+
+:10123 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_109 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "12:00" ;
+      :C_endTime "12:50" .
+
+:10124 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_500_L310 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "11:00" ;
+      :C_endTime "11:50" .
+
+:10125 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_24_210 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "12:00" ;
+      :C_endTime "12:50" .
+
+:10126 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "11:00" ;
+      :C_endTime "11:50" .
+
+:10127 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "13:00" ;
+      :C_endTime "13:50" .
+
+:10128 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "15:00" ;
+      :C_endTime "15:50" .
+
+:10129 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학1" ;
+      :is_Held_At :R_25_109 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "15:00" ;
+      :C_endTime "15:50" .
+
+:10201 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_43-1_403 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "12:00" ;
+      :C_endTime "13:50" .
+
+:10202 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_43-1_303 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "12:00" ;
+      :C_endTime "13:50" .
+
+:10203 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_43-1_403 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10204 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L306 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10205 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10206 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L306 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:50" .
+
+:10207 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_209 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10208 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_101 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10209 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L305 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10210 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_110 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10211 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L306 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10212 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L303 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:50" .
+
+:10213 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L303 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10214 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_207 ;
+      :C_dayOfWeek "목" ;
+      :C_startTime "19:00" ;
+      :C_endTime "20:50" .
+
+:10215 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_105 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "17:00" .
+
+:10216 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_209 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10217 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L305 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10218 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L306 ;
+      :C_dayOfWeek "목" ;
+      :C_startTime "19:00" ;
+      :C_endTime "20:50" .
+
+:10219 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_211 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:00" .
+
+:10220 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_209 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:50" .
+
+:10221 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_211 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10222 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_211 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10223 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_500_L303 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10224 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10225 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:50" .
+
+:10226 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_104 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:10227 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_110 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "11:50" .
+
+:10228 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_110 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:50" .
+
+:10229 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_113 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "13:00" ;
+      :C_endTime "14:50" .
+
+:10230 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_25_109 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+      
+:10231 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "수학연습1" ;
+      :is_Held_At :R_24_113 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "15:00" ;
+      :C_endTime "16:50" .
+
+:20101 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "대학글쓰기1" ;
+      :is_Held_At :R_43-1_405 ;
+      :C_dayOfWeek "금" ;
+      :C_startTime "10:00" ;
+      :C_endTime "12:50" .
+
+:20201 rdf:type owl:NamedIndividual, :Course ;
+      :C_CourseName "베리타스 실천: 평등의 물리학" ;
+      :is_Held_At :R_62_205 ;
+      :C_dayOfWeek "월" ;
+      :C_dayOfWeek "수" ;
+      :C_startTime "11:00" ;
+      :C_endTime "12:15" .
+
+
+###  Routes (경로)
+:24동~25동 rdf:type owl:NamedIndividual, :Route ;
+           :is_endPointOf :24동 , :25동 ;
+           :Rt_distance "40.34"^^xsd:float .
+
+:24동~500동 rdf:type owl:NamedIndividual, :Route ;
+            :is_endPointOf :24동 , :500동 ;
+            :has_Hazard :Crosswalk ;
+            :Rt_distance "313.91"^^xsd:float .
+
+:24동~62동 rdf:type owl:NamedIndividual, :Route ;
+           :is_endPointOf :24동 , :62동 ;
+           :has_Hazard :Bollard , :Steep ;
+           :Rt_distance "171.36"^^xsd:float .
+
+:25동~500동 rdf:type owl:NamedIndividual, :Route ;
+            :is_endPointOf :25동 , :500동 ;
+            :Rt_distance "204.66"^^xsd:float .
+
+:25동~62동 rdf:type owl:NamedIndividual, :Route ;
+           :is_endPointOf :25동 , :62동 ;
+           :has_Hazard :Bollard , :Steep ;
+           :Rt_distance "166.7"^^xsd:float .
+
+:43-1동~24동 rdf:type owl:NamedIndividual, :Route ;
+             :is_endPointOf :24동 , :43-1동 ;
+             :Rt_distance "406.31"^^xsd:float .
+
+:43-1동~25동 rdf:type owl:NamedIndividual, :Route ;
+             :is_endPointOf :25동 , :43-1동 ;
+             :Rt_distance "306.6"^^xsd:float .
+
+:43-1동~500동 rdf:type owl:NamedIndividual, :Route ;
+              :is_endPointOf :43-1동 , :500동 ;
+              :has_Hazard :Crosswalk;
+              :Rt_distance "465.18"^^xsd:float .
+
+:43-1동~62동 rdf:type owl:NamedIndividual, :Route ;
+             :is_endPointOf :43-1동 , :62동 ;
+             :Rt_distance "318.54"^^xsd:float .
+
+:500동~62동 rdf:type owl:NamedIndividual, :Route ;
+            :is_endPointOf :500동 , :62동 ;
+            :has_Hazard :Bollard , :Crosswalk , :Steep ;
+            :Rt_distance "421.74"^^xsd:float .

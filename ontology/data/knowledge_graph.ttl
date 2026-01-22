@@ -1,0 +1,1130 @@
+@prefix : <http://snu.ac.kr/barrier-free/> .
+@prefix ns1: <http://snu.ac.kr/barrier-free/%> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:C001 a rdfs:Class ;
+    rdfs:label "Building" .
+
+:C003 a rdfs:Class ;
+    rdfs:label "Room" .
+
+:C004 a rdfs:Class ;
+    rdfs:label "Route" .
+
+:C005 a rdfs:Class ;
+    rdfs:label "Course" .
+
+:C006 a rdfs:Class ;
+    rdfs:label "Facility" .
+
+:C007 a rdfs:Class ;
+    rdfs:label "Hazard" .
+
+:C008 a rdfs:Class ;
+    rdfs:label "TimePoint" .
+
+:0900 rdfs:label "9:00" ;
+    :instanceOf :C008 .
+
+:0950 rdfs:label "9:50" ;
+    :instanceOf :C008 .
+
+:1000 rdfs:label "10:00" ;
+    :instanceOf :C008 .
+
+:10101 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박정필" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "09:50" ;
+    :StartTime "09:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_105 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "105호" ;
+    :title "수학1" .
+
+:10102 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박정필" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "14:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_209 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "209호" ;
+    :title "수학1" .
+
+:10103 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이계선" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "11:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_109 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "109호" ;
+    :title "수학1" .
+
+:10104 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "남계숙" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학1" .
+
+:10105 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김민희" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "10:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학1" .
+
+:10106 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "유자도" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "09:50" ;
+    :StartTime "09:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_109 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "109호" ;
+    :title "수학1" .
+
+:10107 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "윤미" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "10:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_209 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "209호" ;
+    :title "수학1" .
+
+:10108 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "최혜경" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "10:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_210 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "210호" ;
+    :title "수학1" .
+
+:10109 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김영득" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "12:50" ;
+    :StartTime "12:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학1" .
+
+:10110 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김동운" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_209 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "209호" ;
+    :title "수학1" .
+
+:10111 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "남계숙" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "15:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학1" .
+
+:10112 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김지영" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "11:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_207 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "207호" ;
+    :title "수학1" .
+
+:10113 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김현정" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "09:50" ;
+    :StartTime "09:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학1" .
+
+:10114 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "마대건" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L305 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L305호" ;
+    :title "수학1" .
+
+:10115 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "마대건" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "14:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L301 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L301호" ;
+    :title "수학1" .
+
+:10116 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이호주" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "10:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_105 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "105호" ;
+    :title "수학1" .
+
+:10117 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "윤미" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "09:50" ;
+    :StartTime "09:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학1" .
+
+:10118 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "안명숙" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "10:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학1" .
+
+:10119 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "정경훈" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_105 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "105호" ;
+    :title "수학1" .
+
+:10120 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김경선" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "10:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L302 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L302호" ;
+    :title "수학1" .
+
+:10121 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김동운" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "14:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학1" .
+
+:10122 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김대용" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "14:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_105 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "105호" ;
+    :title "수학1" .
+
+:10123 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김지영" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "12:50" ;
+    :StartTime "12:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_109 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "109호" ;
+    :title "수학1" .
+
+:10124 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "천상민" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "11:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L310 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L310호" ;
+    :title "수학1" .
+
+:10125 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김대용" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "12:50" ;
+    :StartTime "12:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_210 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "210호" ;
+    :title "수학1" .
+
+:10126 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "신재호" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "11:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학1" .
+
+:10127 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "최형규" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학1" .
+
+:10128 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "최형규" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "15:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학1" .
+
+:10129 rdfs:label "수학1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김영득" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "15:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_109 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "109호" ;
+    :title "수학1" .
+
+:10201 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박정필" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "12:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :43-1_403 ;
+    :isHeldAt_BuildingLabel "43-1동" ;
+    :isHeldAt_RoomLabel "403호" ;
+    :title "수학연습1" .
+
+:10202 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "남계숙" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "13:50" ;
+    :StartTime "12:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :43-1_303 ;
+    :isHeldAt_BuildingLabel "43-1동" ;
+    :isHeldAt_RoomLabel "303호" ;
+    :title "수학연습1" .
+
+:10203 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "유자도" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :43-1_403 ;
+    :isHeldAt_BuildingLabel "43-1동" ;
+    :isHeldAt_RoomLabel "403호" ;
+    :title "수학연습1" .
+
+:10204 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "마대건" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L306 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L306호" ;
+    :title "수학연습1" .
+
+:10205 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "마대건" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학연습1" .
+
+:10206 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "윤미" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L306 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L306호" ;
+    :title "수학연습1" .
+
+:10207 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "최혜경" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_209 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "209호" ;
+    :title "수학연습1" .
+
+:10208 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이상혁" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_101 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "101호" ;
+    :title "수학연습1" .
+
+:10209 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김현정" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L305 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L305호" ;
+    :title "수학연습1" .
+
+:10210 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이호주" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_110 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "110호" ;
+    :title "수학연습1" .
+
+:10211 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "윤미" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L306 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L306호" ;
+    :title "수학연습1" .
+
+:10212 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "최형규" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L303 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L303호" ;
+    :title "수학연습1" .
+
+:10213 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "최형규" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L303 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L303호" ;
+    :title "수학연습1" .
+
+:10214 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "홍영준" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "목" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "20:50" ;
+    :StartTime "19:00" ;
+    :dayOfWeek ns1:22%EB%AA%A9%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_207 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "207호" ;
+    :title "수학연습1" .
+
+:10215 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이상혁" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "17:00" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_105 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "105호" ;
+    :title "수학연습1" .
+
+:10216 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이계선" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_209 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "209호" ;
+    :title "수학연습1" .
+
+:10217 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박정필" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L305 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L305호" ;
+    :title "수학연습1" .
+
+:10218 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김지영" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "목" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "20:50" ;
+    :StartTime "19:00" ;
+    :dayOfWeek ns1:22%EB%AA%A9%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L306 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L306호" ;
+    :title "수학연습1" .
+
+:10219 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김동운" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:00" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_211 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "211호" ;
+    :title "수학연습1" .
+
+:10220 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이계선" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_209 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "209호" ;
+    :title "수학연습1" .
+
+:10221 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김민희" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_211 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "211호" ;
+    :title "수학연습1" .
+
+:10222 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김동운" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_211 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "211호" ;
+    :title "수학연습1" .
+
+:10223 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "김경선" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :500_L303 ;
+    :isHeldAt_BuildingLabel "500동" ;
+    :isHeldAt_RoomLabel "L303호" ;
+    :title "수학연습1" .
+
+:10224 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박종일" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학연습1" .
+
+:10225 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박종일" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학연습1" .
+
+:10226 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "박종일" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_104 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "104호" ;
+    :title "수학연습1" .
+
+:10227 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "Otto van Koert" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "11:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_110 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "110호" ;
+    :title "수학연습1" .
+
+:10228 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "Otto van Koert" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_110 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "110호" ;
+    :title "수학연습1" .
+
+:10229 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이훈희" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "14:50" ;
+    :StartTime "13:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_113 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "113호" ;
+    :title "수학연습1" .
+
+:10230 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "Otto van Koert" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :25_109 ;
+    :isHeldAt_BuildingLabel "25동" ;
+    :isHeldAt_RoomLabel "109호" ;
+    :title "수학연습1" .
+
+:10231 rdfs:label "수학연습1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "이훈희" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "16:50" ;
+    :StartTime "15:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :24_113 ;
+    :isHeldAt_BuildingLabel "24동" ;
+    :isHeldAt_RoomLabel "113호" ;
+    :title "수학연습1" .
+
+:1050 rdfs:label "10:50" ;
+    :instanceOf :C008 .
+
+:1100 rdfs:label "11:00" ;
+    :instanceOf :C008 .
+
+:1150 rdfs:label "11:50" ;
+    :instanceOf :C008 .
+
+:1200 rdfs:label "12:00" ;
+    :instanceOf :C008 .
+
+:1215 rdfs:label "12:15" ;
+    :instanceOf :C008 .
+
+:1250 rdfs:label "12:50" ;
+    :instanceOf :C008 .
+
+:1300 rdfs:label "13:00" ;
+    :instanceOf :C008 .
+
+:1350 rdfs:label "13:50" ;
+    :instanceOf :C008 .
+
+:1400 rdfs:label "14:00" ;
+    :instanceOf :C008 .
+
+:1450 rdfs:label "14:50" ;
+    :instanceOf :C008 .
+
+:1500 rdfs:label "15:00" ;
+    :instanceOf :C008 .
+
+:1550 rdfs:label "15:50" ;
+    :instanceOf :C008 .
+
+:1650 rdfs:label "16:50" ;
+    :instanceOf :C008 .
+
+:1700 rdfs:label "17:00" ;
+    :instanceOf :C008 .
+
+:1900 rdfs:label "19:00" ;
+    :instanceOf :C008 .
+
+:20101 rdfs:label "대학글쓰기1" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "전진호" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "금" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "12:50" ;
+    :StartTime "10:00" ;
+    :dayOfWeek ns1:22%EA%B8%88%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :43-1_405 ;
+    :isHeldAt_BuildingLabel "43-1동" ;
+    :isHeldAt_RoomLabel "405호" ;
+    :title "대학글쓰기1" .
+
+:20201 rdfs:label "베리타스 실천: 평등의 물리학" ;
+    ns1:EB%8C%80%ED%91%9C%EA%B5%90%EC%88%98 "PARK YUN" ;
+    ns1:EC%88%98%EC%97%85%20%EC%9A%94%EC%9D%BC "월,수" ;
+    ns1:EC%A7%80%EC%9B%90%20%EC%82%AC%ED%95%AD "o" ;
+    :EndTime "12:15" ;
+    :StartTime "11:00" ;
+    :dayOfWeek ns1:22%EC%88%98%22%5E%5Exsd%3Astr,
+        ns1:22%EC%9B%94%22%5E%5Exsd%3Astr ;
+    :instanceOf :C005 ;
+    :isHeldAt :62_205 ;
+    :isHeldAt_BuildingLabel "62동" ;
+    :isHeldAt_RoomLabel "205호" ;
+    :title "베리타스 실천: 평등의 물리학" .
+
+:2050 rdfs:label "20:50" ;
+    :instanceOf :C008 .
+
+:H_001 rdfs:label "Curb" ;
+    :instanceOf :C007 .
+
+:43-1_303 rdfs:label "43-1동 303호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N001 .
+
+:43-1_405 rdfs:label "43-1동 405호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N001 .
+
+:500_L301 rdfs:label "500동 L301호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N004 .
+
+:500_L302 rdfs:label "500동 L302호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N004 .
+
+:500_L310 rdfs:label "500동 L310호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N004 .
+
+:62_205 rdfs:label "62동 205호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N005 .
+
+:N005 rdfs:label "62동" ;
+    :getLat ns1:2237.4592419%22%5E%5Exsd%3Afloat ;
+    :getLong ns1:22126.952114%22%5E%5Exsd%3Afloat ;
+    :hasFacility :F_001,
+        :F_002,
+        :F_003,
+        :F_004 ;
+    :instanceOf :C001 ;
+    :isEndpointOf :R_004,
+        :R_007,
+        :R_009,
+        :R_010 .
+
+:24_113 rdfs:label "24동 113호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N002 .
+
+:24_207 rdfs:label "24동 207호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N002 .
+
+:24_210 rdfs:label "24동 210호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N002 .
+
+:N001 rdfs:label "43-1동" ;
+    :getLat ns1:2237.4566361%22%5E%5Exsd%3Afloat ;
+    :getLong ns1:22126.9514268%22%5E%5Exsd%3Afloat ;
+    :hasFacility :F_001,
+        :F_002,
+        :F_003 ;
+    :instanceOf :C001 ;
+    :isEndpointOf :R_001,
+        :R_002,
+        :R_003,
+        :R_004 .
+
+:R_001 rdfs:label "43-1동과 24동 사이 경로" ;
+    :distance ns1:22406.31%22%5E%5Exsd%3Afloat ;
+    :instanceOf :C004 .
+
+:R_002 rdfs:label "43-1동과 25동 사이 경로" ;
+    :distance ns1:22306.6%22%5E%5Exsd%3Afloat ;
+    :instanceOf :C004 .
+
+:R_003 rdfs:label "43-1동과 500동 사이 경로" ;
+    :distance ns1:22465.18%22%5E%5Exsd%3Afloat ;
+    :hasHazard :H_002 ;
+    :instanceOf :C004 .
+
+:R_004 rdfs:label "43-1동과 62동 사이 경로" ;
+    :distance ns1:22318.54%22%5E%5Exsd%3Afloat ;
+    :instanceOf :C004 .
+
+:R_005 rdfs:label "24동과 25동 사이 경로" ;
+    :distance ns1:2240.34%22%5E%5Exsd%3Afloat ;
+    :instanceOf :C004 .
+
+:R_006 rdfs:label "24동과 500동 사이 경로" ;
+    :distance ns1:22313.91%22%5E%5Exsd%3Afloat ;
+    :hasHazard :H_002 ;
+    :instanceOf :C004 .
+
+:R_007 rdfs:label "24동과 62동 사이 경로" ;
+    :distance ns1:22171.36%22%5E%5Exsd%3Afloat ;
+    :hasHazard :H_003,
+        :H_004 ;
+    :instanceOf :C004 .
+
+:R_008 rdfs:label "25동과 500동 사이 경로" ;
+    :distance ns1:22204.66%22%5E%5Exsd%3Afloat ;
+    :instanceOf :C004 .
+
+:R_009 rdfs:label "25동과 62동 사이 경로" ;
+    :distance ns1:22166.7%22%5E%5Exsd%3Afloat ;
+    :hasHazard :H_003,
+        :H_004 ;
+    :instanceOf :C004 .
+
+:R_010 rdfs:label "500동과 62동 사이 경로" ;
+    :distance ns1:22421.74%22%5E%5Exsd%3Afloat ;
+    :hasHazard :H_002,
+        :H_003,
+        :H_004 ;
+    :instanceOf :C004 .
+
+:24_211 rdfs:label "24동 211호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N002 .
+
+:25_110 rdfs:label "25동 110호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N003 .
+
+:500_L303 rdfs:label "500동 L303호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N004 .
+
+:500_L305 rdfs:label "500동 L305호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N004 .
+
+:H_002 rdfs:label "Crosswalk" ;
+    :instanceOf :C007 .
+
+:H_003 rdfs:label "Bollard" ;
+    :instanceOf :C007 .
+
+:H_004 rdfs:label "Steep" ;
+    :instanceOf :C007 .
+
+:500_L306 rdfs:label "500동 L306호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N004 .
+
+:F_001 rdfs:label "WC" ;
+    :instanceOf :C006 .
+
+:F_004 rdfs:label "AutoDoor" ;
+    :instanceOf :C006 .
+
+:25_105 rdfs:label "25동 105호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N003 .
+
+:25_109 rdfs:label "25동 109호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N003 .
+
+:F_002 rdfs:label "lift" ;
+    :instanceOf :C006 .
+
+:F_003 rdfs:label "Ramp" ;
+    :instanceOf :C006 .
+
+:N002 rdfs:label "24동" ;
+    :getLat ns1:2237.4594369%22%5E%5Exsd%3Afloat ;
+    :getLong ns1:22126.9499173%22%5E%5Exsd%3Afloat ;
+    :hasFacility :F_002,
+        :F_003,
+        :F_004 ;
+    :instanceOf :C001 ;
+    :isEndpointOf :R_001,
+        :R_005,
+        :R_006,
+        :R_007 .
+
+:N003 rdfs:label "25동" ;
+    :getLat ns1:2237.4587043%22%5E%5Exsd%3Afloat ;
+    :getLong ns1:22126.9499921%22%5E%5Exsd%3Afloat ;
+    :hasFacility :F_001,
+        :F_002,
+        :F_003,
+        :F_004 ;
+    :instanceOf :C001 ;
+    :isEndpointOf :R_002,
+        :R_005,
+        :R_008,
+        :R_009 .
+
+:24_209 rdfs:label "24동 209호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N002 .
+
+:N004 rdfs:label "500동" ;
+    :getLat ns1:2237.4591703%22%5E%5Exsd%3Afloat ;
+    :getLong ns1:22126.9482037%22%5E%5Exsd%3Afloat ;
+    :hasFacility :F_001,
+        :F_002,
+        :F_003,
+        :F_004 ;
+    :instanceOf :C001 ;
+    :isEndpointOf :R_003,
+        :R_006,
+        :R_008,
+        :R_010 .
+
+:25_101 rdfs:label "25동 101호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N003 .
+
+:25_104 rdfs:label "25동 104호" ;
+    :instanceOf :C003 ;
+    :isLocatedIn :N003 .
+
