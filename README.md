@@ -102,7 +102,8 @@
 ---
 
 ## 📊 지식 그래프 구조
-<img width="778" height="747" alt="image" src="https://github.com/user-attachments/assets/91c0dd62-8096-48d0-903f-d7a839ae4123" />
+- **`knowledge_graph.html`**: [지식 그래프 시각화 보기](https://dmseong.github.io/Course_Registration_Supporter/)
+<img width="500" height="480" alt="image" src="https://github.com/user-attachments/assets/91c0dd62-8096-48d0-903f-d7a839ae4123" />
 
 ### 온톨로지 개요
 - **주체 (Classes)**: 교과목, 건물, 시설, 경로 등
@@ -138,7 +139,6 @@ http://snu.ac.kr/barrier-free/
 
 - **`competency_questions.md`**: 온톨로지가 답할 수 있는 질문들
 - **`prompt.md`**: AI 에이전트의 시스템 프롬프트
-- **`knowledge_graph.html`**: [지식 그래프 시각화 보기](https://dmseong.github.io/Course_Registration_Supporter/)
 
 
 
