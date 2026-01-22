@@ -139,6 +139,3 @@ http://snu.ac.kr/barrier-free/
 
 - **`competency_questions.md`**: 온톨로지가 답할 수 있는 질문들
 - **`prompt.md`**: AI 에이전트의 시스템 프롬프트
-
-
-
